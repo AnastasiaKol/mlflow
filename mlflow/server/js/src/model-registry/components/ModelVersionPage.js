@@ -115,7 +115,7 @@ export class ModelVersionPageImpl extends React.Component {
     return this.props
       .updateModelVersionApi(
         modelName,
-        version,
+        version.toString(),
         description,
         this.updateModelVersionRequestId,
       )
